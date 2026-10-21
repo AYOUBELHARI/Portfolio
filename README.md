@@ -1,36 +1,46 @@
-# Frontend Developer Portfolio
+# Developer Portfolio
 
-A collection of my frontend development projects, built to develop practical skills and solve real-world problems.
+Welcome to my developer portfolio! This repository contains my projects, experiments, and practical work as I learn and grow as a software developer.
 
-## About
+## About Me
 
-I'm a self-taught frontend developer focused on building responsive, accessible, and user-friendly websites for real-world use cases.
+I'm a self-taught developer focused on building practical skills, solving problems, and turning ideas into working software.
+
+This portfolio documents my learning journey, showcases my projects, and demonstrates my progress in software development.
 
 ## Projects
 
-| Project | Description | Technologies | Live Demo |
-|---|---|---|---|
-| Café Atlas | A café website showcasing its menu, opening hours, location, and contact information. | HTML, CSS, JavaScript | Coming soon |
+This repository brings together projects covering different areas of development, including web development, programming fundamentals, and software engineering.
 
-## Skills
+Each project aims to solve a problem, explore a concept, or develop a practical skill.
 
-- HTML5
-- CSS3
-- JavaScript
-- Git and GitHub
-- Responsive web design
+## Skills & Technologies
 
-## Running a Project Locally
+My skills and technology stack will evolve as I gain experience.
 
-1. Clone this repository.
-2. Navigate to the project directory.
-3. Open its `index.html` file in a browser, or use a local development server if required.
+- Programming languages
+- Web development
+- Software development tools
+- Version control with Git and GitHub
+- Problem-solving and algorithmic thinking
+
+## Repository Structure
+
+Projects are organized to make the repository easy to navigate. Each project may include its own documentation, source code, setup instructions, and additional resources.
+
+## Goals
+
+- Build practical, real-world projects.
+- Strengthen programming fundamentals.
+- Write clean, maintainable, and understandable code.
+- Explore new technologies and development tools.
+- Continuously improve through practice and feedback.
 
 ## Contact
 
-- GitHub: https://github.com/YOUR-USERNAME
-- Email: YOUR-EMAIL
+- GitHub: https://github.com/AYOUBELHARI
+- Email: Ayoubhari.003@gmail.com
 
 ---
 
-This portfolio is continuously evolving as I build and improve projects.
+*This portfolio is a work in progress and will continue to evolve alongside my skills and experience.*
