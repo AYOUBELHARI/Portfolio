@@ -1,3 +1,225 @@
+/* Design system */
+:root {
+    --color-background: #f7f0e5;
+    --color-text: #30241f;
+    --color-accent: #a64b32;
+    --color-white: #ffffff;
+
+    --space-small: 0.5rem;
+    --space-medium: 1rem;
+    --space-large: 2rem;
+    --space-section: 5rem;
+}
+
+/* Predictable element sizing */
 * {
     box-sizing: border-box;
+}
+
+/* Base page styles */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    color: var(--color-accent);
+}
+a:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 4px;
+}
+
+/* Header & navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-medium);
+    padding: var(--space-medium) var(--space-large);
+}
+header > a {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-text);
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-medium);
+}
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+}
+nav a:hover {
+    color: var(--color-text);
+}
+
+/* main section --- Acceuil */
+#accueil {
+    padding: var(--space-section) var(--space-large);
+    text-align: center;
+}
+#accueil h1 {
+    max-width: 750px;
+    margin: 0 auto var(--space-medium);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.15;
+}
+#accueil p {
+    max-width: 600px;
+    margin: 0 auto var(--space-large);
+}
+#accueil > a {
+    display: inline-block;
+    margin: var(--space-small);
+    padding: 0.75rem 1.25rem;
+    border: 2px solid var(--color-accent);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#accueil > a:first-of-type {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+}
+#accueil > a:last-of-type {
+    color: var(--color-accent);
+}
+
+/* Shared section layout */
+#menu,
+#horaire,
+#contact {
+    padding: 3rem var(--space-large);
+}
+#menu,
+#horaire {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+#menu h2,
+#horaire h2,
+#contact h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+#menu > p,
+#horaire > p {
+    max-width: 650px;
+}
+
+/* Menu cards */
+#menu ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+#menu li {
+    background-color: var(--color-white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #e5d8c7;
+}
+#menu li h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+#menu li p {
+    margin-bottom: 0;
+}
+
+/* Opening hours and location */
+#horaire ul {
+    padding-left: 1.25rem;
+}
+#horaire h3 {
+    margin-top: 2rem;
+}
+#horaire address {
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+
+/* Contact section */
+#contact {
+    background-color: #30241f;
+    color: var(--color-white);
+}
+#contact a {
+    color: #f2c7a5;
+}
+
+/* Footer */
+footer {
+    padding: 1.5rem var(--space-large);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+/* Responsive layout: tablets and smaller screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    nav {
+        justify-content: center;
+        gap: 0.75rem 1rem;
+    }
+    #accueil {
+        padding: 4rem 1.25rem;
+    }
+    #menu,
+    #horaire,
+    #contact {
+        padding: 3rem 1.25rem;
+    }
+    #menu ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Responsive layout: phones */
+@media (max-width: 480px) {
+    nav {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        gap: 0.5rem 1.25rem;
+    }
+    nav a {
+        font-size: 0.9rem;
+    }
+    #accueil {
+        padding: 3rem 1rem;
+    }
+    #accueil h1 {
+        font-size: clamp(1.9rem, 7vw, 2.25rem);
+    }
+    #accueil > a {
+        margin: 0.35rem;
+    }
+    #menu,
+    #horaire,
+    #contact {
+        padding: 2.5rem 1rem;
+    }
+    #menu ul {
+        grid-template-columns: 1fr;
+    }
 }
