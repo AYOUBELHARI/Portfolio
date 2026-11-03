@@ -8,12 +8,22 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <script src="./script.js" defer></script>
     <header>
         <a href="#main" aria-label="Café Atlas — Accueil">
             Café Atlas
         </a>
 
-        <nav aria-label="Navigation principale">
+        <button
+            class="nav-toggle"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+        >
+            ☰
+        </button>
+
+        <nav id="primary-navigation" aria-label="Navigation principale">
             <a href="#accueil">Accueil</a>
             <a href="#menu">La carte</a>
             <a href="#horaire">Horaires et accès</a>
