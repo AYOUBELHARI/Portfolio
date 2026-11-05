@@ -29,3 +29,6 @@ French
 
 ## Scope
 A responsive, single-page café website built with HTML, CSS and JavaScript. No backend, payment system, customer accounts or online ordering in version one.
+
+## Live webpage
+https://ayoubelhari.github.io/Coffee_Website/
